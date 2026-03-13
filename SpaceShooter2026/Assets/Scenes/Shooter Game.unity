@@ -350,7 +350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 744543482}
   - component: {fileID: 744543483}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -444,7 +444,7 @@ GameObject:
   - component: {fileID: 874588954}
   - component: {fileID: 874588958}
   - component: {fileID: 874588957}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -539,11 +539,12 @@ Transform:
   m_GameObject: {fileID: 874588953}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.16, y: -0.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 744543482}
+  - {fileID: 927740215}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &874588957
@@ -559,6 +560,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   speed: 0.1
+  bulletPrefab: {fileID: 1906682534841335784, guid: 7b06831ed9db4564d97edde4ea0fe50d, type: 3}
+  bulletSpawnPoint: {fileID: 0}
 --- !u!114 &874588958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -572,6 +575,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   speed: 0.1
+  bulletPrefab: {fileID: 1906682534841335784, guid: 7b06831ed9db4564d97edde4ea0fe50d, type: 3}
+  bulletSpawnPoint: {fileID: 0}
+--- !u!1 &927740214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 927740215}
+  m_Layer: 3
+  m_Name: Bullet Spawn Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &927740215
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927740214}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.91, y: 0.01, z: 0}
+  m_LocalScale: {x: 0.92516714, y: 0.92516714, z: 0.92516714}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 874588956}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
